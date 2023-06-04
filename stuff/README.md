@@ -30,3 +30,7 @@ sudo docker run -it --storage-opt size=5G fedora /bin/bash
 ```
 sudo docker run -v "$(pwd)/app:/app" -w /app -it ubuntu ls
 ```
+
+```
+sudo docker run -e MYVAR1=2 --env MYVAR2=foo ubuntu env
+```
